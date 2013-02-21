@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">M07_UF1_NF1.2_04</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="context_title">Change Background Color</string>
+	<string name="red">Red</string>
+	<string name="green">Green</string>
+	<string name="yellow">Yellow</string>
+	<string name="wood">Wood Pattern</string>
+</resources>

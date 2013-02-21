@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="clip_horizontal"
+    android:orientation="horizontal">
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+        
+        <LinearLayout android:id="@+id/galleryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#AAAAAA" >
+                           
+        </LinearLayout>
+        
+    </ScrollView>
+
+	    <RelativeLayout android:id="@+id/thumbView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+	
+	        <ImageSwitcher android:id="@+id/bigImage"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dip"
+	            android:padding="2dip"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/ic_launcher" />
+	        
+	        <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:orientation="vertical"
+	                android:layout_below="@+id/bigImage"   
+	                android:layout_centerHorizontal="true" > 
+	            
+		        <TextView android:id="@+id/imgPath"
+		            android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:padding="2dip"
+		        	android:textColor="#FFFFFF"
+		        	android:textSize="11sp"
+		        	android:textStyle="bold" />
+		
+		        <TextView
+		            android:id="@+id/imgSize"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="2dip"
+		            android:textColor="#FFFFFF"
+		            android:textSize="11sp" />
+		                    
+	        </LinearLayout>
+	
+	    </RelativeLayout>        
+
+</LinearLayout>
